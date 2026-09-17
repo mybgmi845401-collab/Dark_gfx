@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0B0F19"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal">
+
+    <!-- Section Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🔒 SECURITY CORE • FIREWALL"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#FF3366"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Firewall Status Card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#131B2E"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Net Core Protection"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txtFirewallStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="INACTIVE"
+            android:textColor="#FF3366"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Firewall Action Button -->
+    <Button
+        android:id="@+id/btnActivateFirewall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ACTIVATE FIREWALL"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FF3366"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Fast-select Version Panel note -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="✔ Filtering active background sockets for BGMI &amp; PUBG."
+        android:textColor="#8892B0"
+        android:textSize="12sp"
+        android:gravity="center" />
+
+</LinearLayout>
