@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0B0F19"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal">
+
+    <!-- Section Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🌐 DNS NETWORK TUNNEL"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#00E5FF"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Status Badge Card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#131B2E"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Status: NEXTDNS • AUTO"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txtDnsStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OFFLINE"
+            android:textColor="#FF3366"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Main Action Button -->
+    <Button
+        android:id="@+id/btnActivateDns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ACTIVATE PROTECTION"
+        android:textColor="#000000"
+        android:backgroundTint="#00E5FF"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Quick Launch BGMI Slider / Button -->
+    <Button
+        android:id="@+id/btnQuickLaunch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🚀 QUICK LAUNCH BGMI"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#1F293D"
+        android:textStyle="bold" />
+
+</LinearLayout>
