@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0B0F19"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal">
+
+    <!-- Header Branding -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DARKKILLER"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#00FF66"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GAMING NETWORK • GFX &amp; TUNNEL CORE"
+        android:textSize="11sp"
+        android:textColor="#00E5FF"
+        android:layout_marginBottom="32dp"
+        android:gravity="center" />
+
+    <!-- GFX Tool Card Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#131B2E"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🔥 FULL BRUTAL FILE (.PAK) MODIFIER"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnApplyMod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="APPLY MOD (BGMI / PUBG)"
+            android:textColor="#000000"
+            android:backgroundTint="#00FF66"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnRemoveMod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="REMOVE MOD"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FF3366"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>
