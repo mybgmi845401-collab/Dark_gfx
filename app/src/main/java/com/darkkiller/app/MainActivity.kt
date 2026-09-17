@@ -11,13 +11,20 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Binding UI buttons from activity_main.xml
+        // 1. Trigger Auto-Update JSON Check on Startup
+        try {
+            val updateHelper = UpdateHelper(this)
+            updateHelper.checkForUpdates()
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
+
+        // 2. Binding UI buttons from activity_main.xml
         val btnApplyMod = findViewById<Button>(R.id.btnApplyMod)
         val btnRemoveMod = findViewById<Button>(R.id.btnRemoveMod)
 
         // Apply Mod Button Click Listener
         btnApplyMod.setOnClickListener {
-            // Check Shizuku permission and apply .pak file to BGMI/PUBG directory
             applyFullBrutalPak()
         }
 
@@ -29,13 +36,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun applyFullBrutalPak() {
         try {
-            // Shizuku command execution stub for copying .pak file to game directory
-            // Target path typically: /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/
+            // Shizuku command execution stub for copying .pak file to BGMI/PUBG directory
             Toast.makeText(this, "Applying Full Brutal .pak via Shizuku...", Toast.LENGTH_SHORT).show()
-            
-            // Example Shizuku shell execution command format:
-            // Shizuku.newProcess(arrayOf("sh", "-c", "cp /path/to/mod.pak /sdcard/Android/data/com.tencent.ig/..."), null, null)
-            
         } catch (e: Exception) {
             Toast.makeText(this, "Error: Shizuku not active or permission denied", Toast.LENGTH_LONG).show()
         }
@@ -43,6 +45,5 @@ class MainActivity : AppCompatActivity() {
 
     private fun removePakMods() {
         Toast.makeText(this, "Cleaning up .pak modifications...", Toast.LENGTH_SHORT).show()
-        // Add Shizuku deletion commands here if needed
     }
 }
